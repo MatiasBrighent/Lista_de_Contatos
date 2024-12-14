@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda_de_contatos.jpg" alt="Foto de uma lista de contatos">
+            <h1>Lista de Contatos</h1>
+        </header>
+        <form id="form-contatcs">
+            <input type="text" id="Name" required placeholder="Nome">
+            <input type="tel" id="Number" required placeholder="Telefone" maxlength="11">  
+            <button type="submit">Salvar</button>
+        </form>
+        <table >
+            <thead class="contatcs-table_head">
+                <tr>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>---</span></td>
+                    <td><span>---</span></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td id="total_contatcts"><span>---</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
